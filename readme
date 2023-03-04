@@ -14,3 +14,5 @@ az webapp up --sku F1 --name <app-name> --os-type <os>
 pipeline example ref:
 
 https://learn.microsoft.com/en-us/azure/app-service/deploy-azure-pipelines?tabs=yaml
+
+https://subhankarsarkar.com/dot-net6-azure-web-app-deployment-using-azure-devops-pipeline/
