@@ -1,0 +1,11 @@
+ref:
+https://learn.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=net60&pivots=development-environment-cli
+
+dotnet new webapp -n MyFirstAzureWebApp --framework net6.0
+cd MyFirstAzureWebApp
+
+dotnet run --urls=https://localhost:5001/
+
+
+az login
+az webapp up --sku F1 --name <app-name> --os-type <os>
