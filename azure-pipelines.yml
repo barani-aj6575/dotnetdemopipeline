@@ -28,15 +28,13 @@ steps:
     PathtoPublish: '$(System.DefaultWorkingDirectory)/build$(Build.BuildId).zip'
     artifactName: 'drop'
 
-trigger:
-- main
-
 variables:
   # Azure service connection established during pipeline creation
   azureSubscription: 1e0d1bc9-3424-45b6-85cf-d032a916ab5e
   appName: demodotnetfuncapp
   # Agent VM image name
   vmImageName: 'windows-latest'
+
 - task: AzureFunctionApp@2
   inputs:
     azureSubscription: 'Azure Pass - Sponsorship (1e0d1bc9-3424-45b6-85cf-d032a916ab5e)'
